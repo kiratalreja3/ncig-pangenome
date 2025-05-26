@@ -1,0 +1,1 @@
+( seq 22; echo X; echo Y) | while read i; do awk '$6 ~ "chr'$i'$"' $(echo $1) | cut -f 1 | sort > chr$i.contigs; done
