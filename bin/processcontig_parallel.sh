@@ -1,7 +1,5 @@
 #!/bin/bash
 
-module load pythonlib samtools parallel htslib
-
 set -ex
 
 cd ${PBS_JOBFS}

@@ -12,10 +12,6 @@
 
 
 set -ex
-
-module use -a /g/data/if89/shpcroot/modules
-module load singularity
-module load pangenome/pggb
 unset -f which
 
 cp ${fasta} ${fai} ${PBS_JOBFS}
